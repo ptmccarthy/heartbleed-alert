@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Heartbleed Alert",
+  "description": "This extension alerts you if the page you are viewing is vulnerable to the Heartbleed OpenSSL exploit.",
+  "version": "0.0.1",
+  "icons": {
+  },
+
+  "author": "Patrick McCarthy",
+
+  "background": { "scripts": ["lib/jquery-2.1.0.min.js", "background.js"] },
+
+ 
+  "permissions": [
+    "webNavigation",
+    "*://*/*"
+  ],
+
+  "browser_action": {
+    "default_title": "Heartbleed Alert",
+    "default_icon": "resources/heartbleed.png"
+  }
+}
